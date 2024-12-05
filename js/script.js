@@ -18,3 +18,19 @@ function multiply(factorA, factorB) {
   return factorA * factorB;
 }
 
+function display(text) {
+  boxDisplay.textContent = text;
+}
+
+const keypads = document.querySelectorAll(".container-keypads button");
+
+keypads.forEach(keypad => {
+  keypad.addEventListener("click", event => {
+    const textDisplay = event.target.textContent;
+    console.log(textDisplay);
+    display(textDisplay);
+  });
+});
+
+const boxDisplay = document.querySelector(".container-display");
+
