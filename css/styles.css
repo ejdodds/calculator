@@ -1,0 +1,103 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+
+.container {
+  /* Size */
+  height: 100vh;
+  /* Alignment */
+  display: flex;
+  flex-direction: column;
+}
+
+.container-main {
+  /* alignment */
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.container-calculator {
+  /* Color */
+  border: 2px solid #000;
+ /* Size */
+  width: 175px;
+  height: 300px;
+  /* Alignment */
+  display: flex;
+  flex-direction: column;
+}
+
+.container-display {
+  /* Size */
+  height: 50px;
+  /* Color */
+  border: 2px solid #000;
+  /* Alignment */
+  text-align: right;
+  align-content: flex-end;
+  margin: 8px;
+  padding: 8px;
+}
+
+.container-keypads {
+  /* Alignment */
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 8px;
+}
+
+.keypads {
+  /* Size */
+  height: 100%;
+  /* Alignment */
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 0;
+}
+
+
+.keypads-number {
+   /* Alignment */
+   display: flex;
+   justify-content: center;
+   flex-wrap: wrap;
+   align-content: center;
+   gap: 16px 4px;
+}
+
+
+.operators {
+  /* Size */
+  height: 100%;
+  /* Alignment */
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 0;
+}
+
+.keypad {
+  /* Size */
+  height: 25px;
+  width: 25px;
+}
+
+.container-footer {
+  /* Alignment */
+  text-align: center;
+}
